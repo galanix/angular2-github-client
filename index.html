@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>API</title>
+  <link href="https://bootswatch.com/simplex/bootstrap.min.css" rel="stylesheet">
+  <link href='css/demo.css' rel='stylesheet' type='text/css' media='screen' />
+</head>
+<body>
+  
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Github Finder</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+
+  <div id="main_wrapper">
+    <div class="container">
+
+      <div class="searchContainer">
+        <h1>Search Github</h1>
+        <input type="search" class="form-control" id="search_words" name="search_words" placeholder="Поиск по сайту..." autocomplete="off"> 
+        <input type="submit" class="btn btn-primary" id="search_button" value="Найти">
+      </div>
+     
+      <div id="radio_button" class="radio">
+        <label>
+          <input type="radio" name="radio_search" value="repa" checked/>
+            репозитории
+        </label>
+        <!---<label>
+          <input type="radio" name="radio_search" value="org"/>
+            организации
+        </label>-->
+        <label>
+          <input type="radio" name="radio_search" value="uzer"/>
+            пользователи
+        </label>
+      </div>
+
+      <div id="checkbox_button" class="checkbox">
+        <label>
+          <input type="checkbox" name="checkbox_search" value="exact_query"/>
+            точный запрос
+        </label>
+      </div>
+
+      <div id="append">
+        <div id="result_search"></div>
+        <div id="result_search_body"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='js/demo.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
